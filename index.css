@@ -1,0 +1,47 @@
+body {
+    background-color: #e2e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mah {
+    margin-top: 120px;
+}
+.h {
+    border-radius: 50%;
+    animation-name: totate;
+    animation-duration: 1s;
+    animation: totate 1s linear infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 10px;
+    left: 380px;
+}
+@keyframes totate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+p {
+    position: absolute;
+    top: 93px;
+    left: 180px;
+    background-color: black;
+    height: 85px;
+    width: 11px;
+}
+p::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(177, 34, 34, 0);
+    transform: rotate(45deg);
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+.ya {
+    position: absolute;
+    top: 50px;
+    left: -160px;
+    transform: scale(.3)
+}
